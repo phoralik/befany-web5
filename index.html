@@ -27,8 +27,10 @@
     <div class="nav-links" id="navLinks">
       <a href="#aktuality">Aktuality</a>
       <a href="#sluzby">Služby</a>
+      <a href="#hygiena">Hygiena</a>
       <a href="#tym">Tým</a>
       <a href="#cenik">Ceník</a>
+      <a href="#propacienty">Pro pacienty</a>
       <a href="#kontakt">Kontakt</a>
     </div>
     <a href="#kontakt" class="nav-cta">Objednat se</a>
@@ -43,8 +45,13 @@
     <div class="mobile-menu-content">
       <a href="#aktuality">Aktuality</a>
       <a href="#sluzby">Služby</a>
+      <a href="#hygiena">Dentální hygiena</a>
       <a href="#tym">Tým</a>
       <a href="#cenik">Ceník</a>
+      <a href="#parkovani">Parkování</a>
+      <a href="#pokyny">Pokyny pro pacienty</a>
+      <a href="#faq">Časté otázky</a>
+      <a href="#pohotovost">Zubní pohotovost</a>
       <a href="#kontakt">Kontakt</a>
       <a href="#kontakt" class="mobile-cta">Objednat se</a>
     </div>
@@ -110,7 +117,7 @@
           <span class="section-label">O nás</span>
           <h2>Pečujeme o&nbsp;vaše zdraví, ne&nbsp;jen o&nbsp;zuby</h2>
           <p class="about-lead">Stav dutiny ústní úzce souvisí a ovlivňuje celkové zdraví lidského těla. Klademe důraz na prevenci, včasné odhalení a řešení problémů souvisejících nejen se zuby, ale i s celou dutinou ústní a&nbsp;obličejem.</p>
-          <p>Každý případ posuzujeme individuálně. Po důkladném vyšetření Vás podrobně informujeme a pokusíme se najít společnou cestu k&nbsp;realizaci léčebného plánu.</p>
+          <p class="about-lead">Každý případ posuzujeme individuálně. Po důkladném vyšetření Vás podrobně informujeme a pokusíme se najít společnou cestu k&nbsp;realizaci léčebného plánu.</p>
           <div class="about-image reveal">
             <img src="assets/o-nas.jpg" alt="Interiér dentálního studia Befany — moderní čekárna a ordinace">
           </div>
@@ -173,7 +180,7 @@
         </div>
 
         <div class="service-card glass-card reveal">
-          <div class="service-icon service-icon-accent">
+          <div class="service-icon">
             <i data-lucide="microscope"></i>
           </div>
           <h3>Mikroskopická endodoncie</h3>
@@ -182,7 +189,7 @@
         </div>
 
         <div class="service-card glass-card reveal">
-          <div class="service-icon service-icon-accent">
+          <div class="service-icon">
             <i data-lucide="monitor-smartphone"></i>
           </div>
           <h3>Digitální stomatologie</h3>
@@ -199,7 +206,7 @@
         </div>
 
         <div class="service-card glass-card reveal">
-          <div class="service-icon service-icon-accent">
+          <div class="service-icon">
             <i data-lucide="layers"></i>
           </div>
           <h3>Teleskopické náhrady</h3>
@@ -207,7 +214,7 @@
         </div>
 
         <div class="service-card glass-card reveal">
-          <div class="service-icon service-icon-accent">
+          <div class="service-icon">
             <i data-lucide="smile"></i>
           </div>
           <h3>Snímatelné náhrady</h3>
@@ -220,12 +227,28 @@
   </section>
 
 
+  <!-- ============ DENTÁLNÍ HYGIENA ============ -->
+  <section class="section section-hygiene" id="hygiena">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Dentální hygiena</span>
+        <h2>Profesionální péče o&nbsp;dásně a&nbsp;zuby</h2>
+        <p class="section-desc">Profesionální čištění zubů, odstranění zubního kamene a&nbsp;pigmentací, pomoc s&nbsp;výběrem dentálních pomůcek a&nbsp;nácvik správné techniky domácí&nbsp;péče.</p>
+      </div>
+      <div class="todo-note reveal">
+        <i data-lucide="pencil-line"></i>
+        <p>Podrobné texty této sekce připravujeme ve&nbsp;spolupráci s&nbsp;dentální hygienistkou — dodá&nbsp;Lenka.</p>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ============ TÝM ============ -->
   <section class="section section-team" id="tym">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Náš tým</span>
-        <h2>Potkejte náš tým</h2>
+        <h2>Poznejte náš tým</h2>
       </div>
 
       <div class="team-grid">
@@ -268,6 +291,14 @@
           </div>
           <h3>MDDr. Tereza Pelcová</h3>
           <p class="team-role">Zubní lékařka</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-photo" data-initials="LM">
+            <img src="assets/team/lenka-markova.jpg" alt="Mgr. Lenka Marková" loading="lazy">
+          </div>
+          <h3>Mgr. Lenka Marková</h3>
+          <p class="team-role">Provozní manažerka</p>
         </div>
 
         <div class="team-card reveal">
@@ -367,10 +398,11 @@
       </div>
 
       <div class="pricing-download reveal">
-        <a href="#" class="btn btn-outline">
+        <a href="assets/files/Befany_cenik_2026.pdf" target="_blank" rel="noopener" class="btn btn-outline">
           <i data-lucide="download"></i>
           Kompletní ceník ke stažení (PDF)
         </a>
+        <p class="pricing-note"><i data-lucide="credit-card"></i> Platba kartou je&nbsp;možná.</p>
       </div>
 
     </div>
@@ -420,6 +452,96 @@
   </section>
 
 
+  <!-- ============ PRO PACIENTY ============ -->
+  <section class="section section-patients" id="propacienty">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Pro pacienty</span>
+        <h2>Praktické informace</h2>
+        <p class="section-desc">Vše, co potřebujete vědět před návštěvou i&nbsp;po&nbsp;ní — na&nbsp;jednom&nbsp;místě.</p>
+      </div>
+
+      <div class="patients-grid">
+
+        <!-- Parkování -->
+        <div class="patient-card glass-card reveal" id="parkovani">
+          <div class="service-icon">
+            <i data-lucide="car"></i>
+          </div>
+          <h3>Parkování</h3>
+          <p>U&nbsp;polikliniky i&nbsp;v&nbsp;jejím okolí je k&nbsp;dispozici několik parkovišť, která mohou naši pacienti využít.</p>
+          <div class="todo-note">
+            <i data-lucide="pencil-line"></i>
+            <p>Konkrétní parkoviště a&nbsp;mapku doplníme — podklady dodá&nbsp;Lenka.</p>
+          </div>
+        </div>
+
+        <!-- Zubní pohotovost -->
+        <div class="patient-card glass-card reveal" id="pohotovost">
+          <div class="service-icon">
+            <i data-lucide="siren"></i>
+          </div>
+          <h3>Zubní pohotovost</h3>
+          <p>Akutní bolest mimo naše ordinační hodiny? Zde najdete, kam se&nbsp;obrátit.</p>
+          <div class="todo-note">
+            <i data-lucide="pencil-line"></i>
+            <p>Informace o&nbsp;zubní pohotovosti doplníme — podklady dodá&nbsp;Lenka.</p>
+          </div>
+        </div>
+
+        <!-- Pokyny pro pacienty -->
+        <div class="patient-card glass-card patient-card-wide reveal" id="pokyny">
+          <div class="service-icon">
+            <i data-lucide="clipboard-list"></i>
+          </div>
+          <h3>Pokyny pro pacienty</h3>
+          <p>Praktické pokyny, jak o&nbsp;sebe pečovat po&nbsp;jednotlivých zákrocích — co&nbsp;je normální, na&nbsp;co si dát pozor a&nbsp;kdy se nám&nbsp;ozvat.</p>
+          <div class="pokyny-list">
+            <span class="pokyny-item"><i data-lucide="file-text"></i> Péče po&nbsp;extrakci zubu</span>
+            <span class="pokyny-item"><i data-lucide="file-text"></i> Péče po&nbsp;bělení zubů</span>
+            <span class="pokyny-item"><i data-lucide="file-text"></i> Péče po&nbsp;protetickém ošetření</span>
+          </div>
+          <div class="todo-note">
+            <i data-lucide="pencil-line"></i>
+            <p>Jednotlivé pokyny připravují Lenka s&nbsp;panem doktorem — doplníme, jakmile budou&nbsp;texty.</p>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="patient-card glass-card patient-card-wide reveal" id="faq">
+          <div class="service-icon">
+            <i data-lucide="message-circle-question"></i>
+          </div>
+          <h3>Často kladené otázky</h3>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Jak často mám chodit na&nbsp;preventivní prohlídku? <i data-lucide="chevron-down"></i></summary>
+              <p>Standardně dvakrát ročně. Přesný interval vám doporučí lékař podle stavu vašeho chrupu. Preventivní prohlídka je hrazena zdravotní&nbsp;pojišťovnou.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Ošetřujete i&nbsp;děti? <i data-lucide="chevron-down"></i></summary>
+              <p class="faq-todo">Odpověď doplníme.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Mohu platit kartou? <i data-lucide="chevron-down"></i></summary>
+              <p>Ano, platba kartou je u&nbsp;nás možná.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Kde mohu zaparkovat? <i data-lucide="chevron-down"></i></summary>
+              <p>Možnosti parkování v&nbsp;okolí polikliniky najdete v&nbsp;sekci <a href="#parkovani">Parkování</a>.</p>
+            </details>
+          </div>
+          <div class="todo-note">
+            <i data-lucide="pencil-line"></i>
+            <p>Návrhy odpovědí — před spuštěním potvrdí pan doktor s&nbsp;Lenkou, otázky postupně&nbsp;doplníme.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ============ KONTAKT ============ -->
   <section class="section section-contact" id="kontakt">
     <div class="container">
@@ -436,7 +558,7 @@
             <i data-lucide="map-pin"></i>
             <div>
               <h4>Adresa</h4>
-              <p>Komenského 10 (4. patro)<br>763 21 Slavičín</p>
+              <p>Komenského 10 (poliklinika), 4.&nbsp;patro<br>763 21 Slavičín</p>
             </div>
           </div>
 
@@ -490,6 +612,7 @@
               <i data-lucide="send"></i>
               Odeslat zprávu
             </button>
+            <p class="form-gdpr-note">Odesláním formuláře souhlasíte se&nbsp;zpracováním osobních údajů. <a href="gdpr.html">Zásady ochrany osobních&nbsp;údajů</a></p>
           </form>
         </div>
 
@@ -529,15 +652,18 @@
           <h4>Rychlé odkazy</h4>
           <ul>
             <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#hygiena">Dentální hygiena</a></li>
             <li><a href="#tym">Tým</a></li>
             <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#propacienty">Pro pacienty</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="gdpr.html">Ochrana osobních údajů</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
           <h4>Kontakt</h4>
-          <p>Komenského 10, 4. patro<br>763 21 Slavičín</p>
+          <p>Komenského 10 (poliklinika), 4.&nbsp;patro<br>763 21 Slavičín</p>
           <p><a href="tel:+420771167069">+420 771 167 069</a></p>
           <p><a href="mailto:info@befany.cz">info@befany.cz</a></p>
         </div>
@@ -545,7 +671,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Dentální studio Befany. Všechna práva vyhrazena.</p>
+        <p>&copy; 2026 Dentální studio Befany. Všechna práva vyhrazena. · <a href="gdpr.html">Ochrana osobních&nbsp;údajů</a></p>
       </div>
     </div>
   </footer>
