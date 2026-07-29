@@ -54,16 +54,43 @@
 </head>
 <body>
 
-  <!-- ============ ISLAND NAVIGATION ============ -->
-  <nav class="island-nav scrolled" id="islandNav">
+  <!-- ============ ISLAND NAVIGATION (shodná s hlavní stránkou) ============ -->
+  <nav class="island-nav" id="islandNav">
     <a href="index.html" class="nav-logo">
       <img src="assets/befany-logo.png" alt="Befany" height="28">
     </a>
-    <div class="nav-links">
-      <a href="index.html">← Zpět na hlavní stránku</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#aktuality">Aktuality</a>
+      <a href="index.html#sluzby">Služby</a>
+      <a href="index.html#hygiena">Hygiena</a>
+      <a href="index.html#tym">Tým</a>
+      <a href="index.html#cenik">Ceník</a>
+      <a href="index.html#propacienty">Pro pacienty</a>
+      <a href="index.html#kontakt">Kontakt</a>
     </div>
     <a href="index.html#kontakt" class="nav-cta">Objednat se</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i data-lucide="menu" class="icon-menu"></i>
+      <i data-lucide="x" class="icon-close"></i>
+    </button>
   </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <a href="index.html#aktuality">Aktuality</a>
+      <a href="index.html#sluzby">Služby</a>
+      <a href="index.html#hygiena">Dentální hygiena</a>
+      <a href="index.html#tym">Tým</a>
+      <a href="index.html#cenik">Ceník</a>
+      <a href="index.html#parkovani">Parkování</a>
+      <a href="index.html#pokyny">Pokyny pro pacienty</a>
+      <a href="index.html#faq">Časté otázky</a>
+      <a href="index.html#pohotovost">Zubní pohotovost</a>
+      <a href="index.html#kontakt">Kontakt</a>
+      <a href="index.html#kontakt" class="mobile-cta">Objednat se</a>
+    </div>
+  </div>
 
   <section class="section legal-page">
     <div class="container">
@@ -105,20 +132,64 @@
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ============ FOOTER (shodný s hlavní stránkou) ============ -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="assets/befany-logo.png" alt="Befany" height="36" class="footer-logo">
+          <p>Dentální studio ve Slavičíně.<br>Kvalitní péče s lidským přístupem.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/dsbefany" target="_blank" rel="noopener" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-hours">
+          <h4>Ordinační hodiny</h4>
+          <table class="hours-table">
+            <tr><td>Pondělí</td><td>7:00 — 15:00</td></tr>
+            <tr><td>Úterý</td><td>7:00 — 18:30</td></tr>
+            <tr><td>Středa</td><td>7:00 — 15:00</td></tr>
+            <tr><td>Čtvrtek</td><td>7:00 — 18:30</td></tr>
+            <tr><td>Pátek</td><td>7:00 — 12:00</td></tr>
+          </table>
+          <p class="footer-note">Recepce: Po–Čt 7:00–12:00 a&nbsp;12:30–15:00 · Pá 7:00–12:00</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Rychlé odkazy</h4>
+          <ul>
+            <li><a href="index.html#sluzby">Služby</a></li>
+            <li><a href="index.html#hygiena">Dentální hygiena</a></li>
+            <li><a href="index.html#tym">Tým</a></li>
+            <li><a href="index.html#cenik">Ceník</a></li>
+            <li><a href="index.html#propacienty">Pro pacienty</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+            <li><a href="gdpr.html">Ochrana osobních údajů</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>Komenského 10 (poliklinika), 4.&nbsp;patro<br>763 21 Slavičín</p>
+          <p><a href="tel:+420771167069">+420 771 167 069</a></p>
+          <p><a href="mailto:info@befany.cz">info@befany.cz</a></p>
+        </div>
+
+      </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 Dentální studio Befany. Všechna práva vyhrazena. · <a href="index.html">Zpět na hlavní&nbsp;stránku</a> · <a href="#" onclick="return befanyCookieSettings();">Nastavení&nbsp;cookies</a></p>
+        <p>&copy; 2026 Dentální studio Befany. Všechna práva vyhrazena. · <a href="gdpr.html">Ochrana osobních&nbsp;údajů</a> · <a href="#" onclick="return befanyCookieSettings();">Nastavení&nbsp;cookies</a></p>
       </div>
     </div>
   </footer>
 
-  <script>
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
-  </script>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
   <script src="cookies.js"></script>
 </body>
 </html>

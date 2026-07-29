@@ -3,8 +3,8 @@
    GA4 se načte POUZE po souhlasu návštěvníka.
    ============================================================ */
 (function () {
-  // DOPLNIT: measurement ID GA4 pro web Befany (Pavel založí property)
-  var GA_ID = 'G-XXXXXXXXXX';
+  // GA4 property převzatá ze stávajícího befany.cz (ověřeno 29. 7. 2026)
+  var GA_ID = 'G-1VEDWZFCCP';
   var KEY = 'befany-cookie-consent'; // 'granted' | 'denied'
 
   function loadGA() {

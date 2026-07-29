@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const mobileMenu = document.getElementById('mobileMenu');
 
+  if (navToggle && mobileMenu) {
   navToggle.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
     navToggle.classList.toggle('open', isOpen);
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
     });
   });
+  }
 
 
   // ===== SMOOTH SCROLL =====
@@ -126,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== CONTACT FORM =====
   const form = document.getElementById('contactForm');
 
-  form.addEventListener('submit', (e) => {
+  if (form) form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const btn = form.querySelector('button[type="submit"]');
