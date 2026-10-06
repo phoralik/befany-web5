@@ -25,7 +25,7 @@
       <img src="assets/befany-logo.png" alt="Befany" height="28">
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="#aktuality">Aktuality</a>
+      <a href="#aktuality" class="nav-aktuality" hidden>Aktuality</a>
       <a href="#sluzby">Služby</a>
       <a href="#hygiena">Dentální hygiena</a>
       <a href="#tym">Tým</a>
@@ -43,7 +43,7 @@
   <!-- Mobile overlay menu -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
-      <a href="#aktuality">Aktuality</a>
+      <a href="#aktuality" class="nav-aktuality" hidden>Aktuality</a>
       <a href="#sluzby">Služby</a>
       <a href="#hygiena">Dentální hygiena</a>
       <a href="#tym">Tým</a>
@@ -80,24 +80,15 @@
         </div>
       </div>
     </div>
-    <!-- Aktuality · floating glass banner in hero -->
-    <div class="hero-aktuality" id="aktuality">
+    <!-- Aktuality · obsah se načítá z Google tabulky (main.js), bez platné aktuality zůstane skryto -->
+    <div class="hero-aktuality" id="aktuality" hidden>
       <div class="hero-aktuality-inner glass-card">
         <div class="aktuality-pulse"></div>
         <div class="aktuality-icon">
           <i data-lucide="bell-ring"></i>
         </div>
         <div class="aktuality-content">
-          <div class="aktuality-items">
-            <div class="aktuality-item">
-              <span class="aktuality-badge">Nové</span>
-              <p><strong>Březen 2026:</strong> Omezení provozu, sledujte aktuální ordinační hodiny.</p>
-            </div>
-            <div class="aktuality-divider"></div>
-            <div class="aktuality-item">
-              <p><strong>Únor–červen 2026:</strong> Dentální hygiena dočasně pozastavena. O&nbsp;obnovení vás budeme informovat.</p>
-            </div>
-          </div>
+          <div class="aktuality-items"></div>
         </div>
       </div>
     </div>
@@ -629,10 +620,12 @@
               <label for="message">Zpráva</label>
               <textarea id="message" name="message" rows="4" required placeholder="Popište váš dotaz nebo důvod návštěvy..."></textarea>
             </div>
+            <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
             <button type="submit" class="btn btn-primary btn-full">
               <i data-lucide="send"></i>
               Odeslat zprávu
             </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
             <p class="form-gdpr-note">Odesláním formuláře souhlasíte se&nbsp;zpracováním osobních údajů. <a href="gdpr.html">Zásady ochrany osobních&nbsp;údajů</a></p>
           </form>
         </div>
