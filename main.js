@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Klíč se vyzvedává na web3forms.com zadáním info@befany.cz, přijde do té schránky.
   // Klíč není tajný, jen říká, kam zprávu doručit.
   // Dokud je prázdný, formulář nic nepředstírá a nabídne telefon.
-  const WEB3FORMS_KEY = '';
+  const WEB3FORMS_KEY = '6256e0ec-64d5-4db0-a753-191f4940a482';
   const form = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
