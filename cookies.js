@@ -40,7 +40,7 @@
     el.setAttribute('aria-label', 'Nastavení cookies');
     el.innerHTML =
       '<div class="cookie-banner-inner">' +
-      '<p>Používáme statistické cookies (Google Analytics), abychom v anonymní podobě viděli, jak web funguje. Načtou se jen s vaším souhlasem. <a href="gdpr.html">Více informací</a></p>' +
+      '<p>Používáme statistické cookies (Google Analytics), abychom v anonymní podobě viděli, jak web funguje. Načtou se jen s Vaším souhlasem. <a href="gdpr.html">Více informací</a></p>' +
       '<div class="cookie-banner-actions">' +
       '<button type="button" class="btn btn-primary" id="cookieAccept">Povolit</button>' +
       '<button type="button" class="btn btn-outline" id="cookieDeny">Jen nezbytné</button>' +

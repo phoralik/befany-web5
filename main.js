@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const json = await res.json().catch(() => ({}));
       if (!res.ok || !json.success) throw new Error(json.message || 'HTTP ' + res.status);
       form.reset();
-      showStatus('Děkujeme, zpráva odešla. Ozveme se vám co nejdříve.', true);
+      showStatus('Děkujeme, zpráva odešla. Ozveme se Vám co nejdříve.', true);
     } catch (err) {
       showStatus(ERROR_TEXT, false);
     } finally {
