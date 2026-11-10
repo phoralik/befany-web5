@@ -2081,3 +2081,17 @@ a.pokyny-item:hover {
     height: 220px;
   }
 }
+
+
+/* ===== KOLO 8: mobil, fotka hygieny nad krokem 2 (v6.7) ===== */
+@media (max-width: 600px) {
+  .hygiene-step--foto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hygiene-step--foto .hygiene-step-img {
+    order: -1;
+    margin: 0 auto 20px;
+  }
+}
