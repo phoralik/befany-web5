@@ -2032,3 +2032,52 @@ a.pokyny-item:hover {
   background: rgba(239, 68, 68, 0.08);
   color: #B42318;
 }
+
+
+/* ===== KOLO 7: FOTKY OD LENKY (v6.6) ===== */
+.hygiene-step {
+  display: flow-root;
+}
+
+.hygiene-step-img {
+  float: right;
+  width: 240px;
+  height: auto;
+  margin: 4px 0 16px 28px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.services-photo {
+  max-width: 980px;
+  margin: 0 auto 40px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.services-photo img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+@media (max-width: 600px) {
+  .hygiene-step-img {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 16px;
+  }
+
+  .services-photo {
+    margin-bottom: 28px;
+  }
+
+  .services-photo img {
+    height: 220px;
+  }
+}
